@@ -12,7 +12,7 @@ public class Release {
         ArrayList arr = new ArrayList();
         ArrayList<String> str = new ArrayList<String>();
 	        arr.add("gfgf gfgf nhj 2\n\n");
-	        str.add("hjjh ñgh gg 2"+System.getProperty("line.separator"));
+	        str.add("hjjvb gh gg 2"+System.getProperty("line.separator"));
             for(int i = 10, j = 1; i >= 1; i--, j++){
                 arr.add(""+(pow(numb,i)));
 //                arr.set(j, "");
@@ -30,9 +30,9 @@ public class Release {
 		Runtime.getRuntime().exec("notepad Test_Fork.txt");
 		} catch (IOException e) {
 			Runtime.getRuntime().exec("gedit Test_Fork.txt");
+			Runtime.getRuntime().exec("xed Test_Fork.txt");
 		}
         } catch (Exception exc) {
-			Runtime.getRuntime().exec("xed Test_Fork.txt");
         	JOptionPane.showMessageDialog(null,  "wrong!!");
         } finally {
             if (outfile != null) {
