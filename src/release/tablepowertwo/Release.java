@@ -14,11 +14,11 @@ public class Release {
         	outfile = new FileWriter("Klimov_Fork.txt");
         String[] arr = new String[11];
         String[] str = new String[11];
-	        arr[0] = "Таблица степеней числа 2\n\n";
-	        str[0] = "Таблица степеней числа 2"+System.getProperty("line.separator");
+	        arr[0] = "РўР°Р±Р»РёС†Р° СЃС‚РµРїРµРЅРµР№ С‡РёСЃР»Р° 2\n\n";
+	        str[0] = "РўР°Р±Р»РёС†Р° СЃС‚РµРїРµРЅРµР№ С‡РёСЃР»Р° 2"+System.getProperty("line.separator");
             for(int i = arr.length-1, j = 1; i >= 1; i--, j++){
                 arr[j] = ""+(pow(numb,i));
-                str[j] = "2 в степени "+i+" равно "+arr[j]+System.getProperty("line.separator");
+                str[j] = "2 РІ СЃС‚РµРїРµРЅРё "+i+" СЂР°РІРЅРѕ "+arr[j]+System.getProperty("line.separator");
             	}
             outfile.write(str[0]);
             for(int i = arr.length-1; i>= 1; i--)
@@ -31,13 +31,13 @@ public class Release {
 			Runtime.getRuntime().exec("gedit Klimov_Fork.txt");
 		}
         } catch (Exception exc) {
-        	JOptionPane.showMessageDialog(null,  "Ошибка записи в файл!!");
+        	JOptionPane.showMessageDialog(null,  "wrong!!");
         } finally {
             if (outfile != null) {
                 try {
                 	outfile.close();
                 } catch (IOException ex) {
-                	JOptionPane.showMessageDialog(null,  "Ошибка при закрытии файла!");
+                	JOptionPane.showMessageDialog(null,  "wrong!");
                 }
             }
             }

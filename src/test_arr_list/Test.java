@@ -19,12 +19,12 @@ public class Test {
         
         System.out.println(str.size());
         
-	        arr.add("Таблица степеней числа 2\n\n");
-	        str.add("Таблица степеней числа 2");
+	        arr.add("РўР°Р±Р»РёС†Р° СЃС‚РµРїРµРЅРµР№ С‡РёСЃР»Р° 2\n\n");
+	        str.add("РўР°Р±Р»РёС†Р° СЃС‚РµРїРµРЅРµР№ С‡РёСЃР»Р° 2");
             for(int i = 1; i <= 10; i++){
                 arr.add(""+(pow(numb,i)));
 //                arr.set(j, "");
-                str.add("2 в степени "+i+" равно "+arr.get(i));//+System.getProperty("line.separator"));
+                str.add("2 РІ СЃС‚РµРїРµРЅРё "+i+" СЂР°РІРЅРѕ "+arr.get(i));//+System.getProperty("line.separator"));
             	}
             System.out.println(str.size());
             for(int i = str.size()-1; i >= 0; i--){

@@ -14,29 +14,29 @@ public class TablePowerTwo {
         try {
         	outfile = new FileWriter("Klimov_Fork.txt");
         	
-        	outfile.write("Таблица степеней числа 2");
+        	outfile.write("РўР°Р±Р»РёС†Р° СЃС‚РµРїРµРЅРµР№ С‡РёСЃР»Р° 2");
             outfile.write(System.getProperty("line.separator") 
             		+ System.getProperty("line.separator"));
             
-            System.out.println("Таблица степеней числа 2\n");
+            System.out.println("РўР°Р±Р»РёС†Р° СЃС‚РµРїРµРЅРµР№ С‡РёСЃР»Р° 2\n");
             
             for(int i = 0; i <= 10; i++){
                 numb = (int) pow(2,i);
-                outfile.write("2 в степени "+i+"  равно: "+numb);
+                outfile.write("2 РІ СЃС‚РµРїРµРЅРё "+i+"  СЂР°РІРЅРѕ: "+numb);
                 outfile.write(System.getProperty("line.separator"));
-                System.out.println("2 в степени " + i + " равно: " + numb);
+                System.out.println("2 РІ СЃС‚РµРїРµРЅРё " + i + " СЂР°РІРЅРѕ: " + numb);
              }
             outfile.flush();
             System.out.println();
             Runtime.getRuntime().exec("notepad Klimov_Fork.txt");
         } catch (Exception exc) {
-        	JOptionPane.showMessageDialog(null,  "Ошибка записи в файл!!");
+        	JOptionPane.showMessageDialog(null,  "wrong!!");
         } finally {
             if (outfile != null) {
                 try {
                 	outfile.close();
                 } catch (IOException ex) {
-                	JOptionPane.showMessageDialog(null,  "Ошибка при закрытии файла!");
+                	JOptionPane.showMessageDialog(null,  "wrong!");
                 }
             }
             }
