@@ -11,12 +11,12 @@ public class Release {
         	outfile = new FileWriter("Test_Fork.txt");
         ArrayList arr = new ArrayList();
         ArrayList<String> str = new ArrayList<String>();
-	        arr.add("gfgf gfgf nhj 2\n\n");
-	        str.add("hjjvb gh gg 2"+System.getProperty("line.separator"));
+	        arr.add("Таблица степеней числа 2\n\n");
+	        str.add("Таблица степеней числа 2"+System.getProperty("line.separator"));
             for(int i = 10, j = 1; i >= 1; i--, j++){
                 arr.add(""+(pow(numb,i)));
 //                arr.set(j, "");
-                str.add("2 g ffg "+i+" ggh "+arr.get(j)+System.getProperty("line.separator"));
+                str.add("2 в степени "+i+" равно "+arr.get(j)+System.getProperty("line.separator"));
             	}
             outfile.write(str.get(0));
             for(int i = arr.size()-1; i >= 1; i--)
