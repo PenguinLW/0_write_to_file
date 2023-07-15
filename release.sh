@@ -4,8 +4,9 @@
 #pip install -r req.txt
 #pip freeze > req.txt
 chmod u+x *.sh *.py
+l_dir=pwd
 
-git config --global --add safe.directory /media/penguinl/PenguinL/PycharmProjects/0_write_to_file
+git config --global --add safe.directory $l_dir
 #git clone -o 0_write_to_file https://github.com/PenguinLW/0_write_to_file.git
 #git config --global user.email "diana1997525@gmail.com"
 #git config --global user.name "PenguinLW"
